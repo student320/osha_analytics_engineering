@@ -27,9 +27,9 @@ GitHub – for version control and project portfolio showcase
 ### Data Staging: Standardized and cleaned OSHA raw data from multiple years (2016–2022).
 ### Intermediate Models: Unioned datasets and added derived fields (e.g., FTE-standardized incident rates, high-risk establishment flags).
 ### Star Schema Design:
-Fact Table: fact_injuries containing standardized metrics and keys.
-Dimension Tables: dim_company, dim_establishment, dim_location, dim_industry, and dim_time.
-Surrogate Keys: Added across most dimensions for consistency and to support Slowly Changing Dimensions (SCD) if applied later.
+- Fact Table: fact_injuries containing standardized metrics and keys.
+- Dimension Tables: dim_company, dim_establishment, dim_location, dim_industry, and dim_time.
+- Surrogate Keys: Added across most dimensions for consistency and to support Slowly Changing Dimensions (SCD) if applied later.
 ### Macros: Implemented reusable macros to convert categorical codes (e.g., establishment type, injury record flags) into descriptive labels.
 ###Data Quality Tests: Included uniqueness, not-null, referential integrity, and custom logic tests.
 
