@@ -53,7 +53,7 @@ Provides insights into workplace safety risks that can guide compliance, resourc
 
 ## Project Links
 
-dbt Project Files – (this repo)
+dbt Project Files – [(this repo)](https://github.com/student320/osha_analytics_engineering/tree/main/osha_analytics)
 
 Power BI Dashboard – coming soon
 
