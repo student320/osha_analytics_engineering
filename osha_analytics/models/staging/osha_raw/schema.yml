@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: osha_raw
+    database: osha-analytics-project
+    schema: osha_data_all
+    tables: 
+    - name: osha_2016
+    - name: osha_2017
+    - name: osha_2018
+    - name: osha_2019
+    - name: osha_2020
+    - name: osha_2021
+    - name: osha_2022
