@@ -33,7 +33,7 @@ renamed as (
         safe_cast(safe_cast(total_hearing_loss as float64) as int64) as total_hearing_loss,
         safe_cast(safe_cast(total_other_illnesses as float64) as int64) as total_other_illnesses,
         safe_cast(safe_cast(year_filing_for as float64) as int64) as year_filing_for,
-        parse_timestamp('%m/%d/%Y %H:%M:%S', created_timestamp) as created_timestamp,
+        parse_timestamp('%m/%d/%Y',created_timestamp) as created_timestamp,
         change_reason
     from source
 )
