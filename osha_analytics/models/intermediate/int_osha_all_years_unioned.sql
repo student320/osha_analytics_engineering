@@ -58,7 +58,7 @@ table_union as (
     from staging
 ),
 
- -- deduplicate and keep latest created_timestamp
+ -- deduplicate and keep latest created_timestamps
 dedup as (
     select *
     from (
