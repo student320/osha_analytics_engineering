@@ -53,8 +53,20 @@ table_union as (
         round((total_deaths * 200000.0 / nullif(total_hours_worked,0)),2) as fatality_rate_fte,
         
         -- flag for high risk establishments
-        case when total_deaths > 1 then 'yes' else 'no' end as high_risk_establishment
+        case when total_deaths > 1 then 'yes' else 'no' end as high_risk_establishment,
+        created_timestamp
     from staging
+),
+
+ -- deduplicate and keep latest created_timestamps
+dedup as (
+    select *
+    from (
+        select *,
+               row_number() over (partition by establishment_id, year_filing_for order by created_timestamp desc) as rn
+        from table_union
+    )
+    where rn = 1
 )
 
-select * from table_union
+select * from dedup
