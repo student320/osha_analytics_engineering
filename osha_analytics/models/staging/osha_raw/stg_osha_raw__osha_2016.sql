@@ -33,25 +33,9 @@ renamed as (
         safe_cast(total_hearing_loss as int64) as total_hearing_loss,
         safe_cast(total_other_illnesses as int64) as total_other_illnesses,
         safe_cast(year_filing_for as int64) as year_filing_for,
-        case
-            when safe.parse_timestamp('%m/%d%Y %H:%M:%S', created_timestamp) is not null
-                then safe.parse_timestamp('%m/%d/%Y %H/%M/%S', created_timestamp)
-            when safe.parse_date('%m/%d%Y', created_timestamp) is not null
-                then timestamp(safe.parse_date('%m/%d/%Y', created_timestamp), created_timestamp)
-        end as created_timestamp,
+        parse_timestamp('%m/%d/%Y %H:%M:%S', created_timestamp) as created_timestamp,
         change_reason
     from source
-),
-
- -- deduplicate and keep latest created_timestamp
-dedup as (
-    select *
-    from (
-        select *,
-               row_number() over (partition by establishment_id, year_filing_for order by created_timestamp desc) as rn
-        from renamed
-    )
-    where rn = 1
 )
 
-select * from dedup
+select * from renamed
