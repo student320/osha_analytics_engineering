@@ -7,7 +7,8 @@ The dataset contains OSHA establishment-level filings across multiple years, inc
 I have completed the data modeling and dbt transformation layer, producing a clean star schema with fact and dimension tables that can support downstream analytics.
 
 Here is an example of my data modelling lineage in dbt:
-<img width="1256" height="603" alt="image" src="https://github.com/user-attachments/assets/46e62ba5-63fc-49a1-b1fe-7912a286c59a" />
+<img width="1302" height="677" alt="image" src="https://github.com/user-attachments/assets/06ef940a-ca7d-411a-babb-7de309ed3b20" />
+
 
 
 Next steps include adding aggregations, ad-hoc analysis, Power BI dashboards, and a requirements/business document to make the project fully production-style.
