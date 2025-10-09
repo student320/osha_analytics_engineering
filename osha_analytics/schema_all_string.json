@@ -1,0 +1,157 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "company_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "establishment_name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ein",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "street_address",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "city",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "state",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "zip_code",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "naics_code",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "industry_description",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "annual_average_employees",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_hours_worked",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "no_injuries_illnesses",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_deaths",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_dafw_cases",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_djtr_cases",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_other_cases",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_dafw_days",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_djtr_days",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_injuries",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_poisonings",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_respiratory_conditions",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_skin_disorders",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_hearing_loss",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "total_other_illnesses",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "establishment_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "establishment_type",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "size",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "year_filing_for",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "created_timestamp",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "change_reason",
+    "type": "STRING"
+  }
+]
