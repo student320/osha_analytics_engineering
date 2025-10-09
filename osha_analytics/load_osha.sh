@@ -1,5 +1,4 @@
 #!/bin/bash
-# Example for OSHA CSVs 2016-2024
 PROJECT="osha-analytics-project"
 DATASET="osha_data_all"
 
